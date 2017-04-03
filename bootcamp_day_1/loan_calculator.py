@@ -1,12 +1,16 @@
 def loancalculator(amount, time, rate):
-    if amount > 0:
-        if time < 1:
-            return 'Invalid month'
+    variable_types = (int, float, complex)
+    if isinstance(amount, variable_types) and isinstance(time, variable_types) and isinstance(rate, variable_types):
+        if amount > 0:
+            if time < 1:
+                return 'Invalid month'
+            else:
+                repayable_amount = amount + (amount*(rate/100)*(time/12))
+                return repayable_amount
         else:
-            repayable_amount = amount + (amount*(rate/100)*(time/12))
-            return repayable_amount
+            return 'Invalid amount'
     else:
-        return 'Invalid amount'
+        raise ValueError
 
 
 print(loancalculator(100000, 12, 12))
