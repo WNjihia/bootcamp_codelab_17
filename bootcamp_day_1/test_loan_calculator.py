@@ -13,7 +13,7 @@ class Loan_calculator(unittest.TestCase):
         self.assertEquals(loancalculator(-100000, 12, 10), 'Invalid amount')
 
     def test_returns_error_message_if_args_not_numbers(self):
-        self.assertRaises(ValueError, loancalculator('twenty', 'three', 'ten'))
+        self.assertRaises(ValueError, loancalculator, 'twenty', 'three', 'ten')
 
 if __name__ == '__main__':
     unittest.main()
