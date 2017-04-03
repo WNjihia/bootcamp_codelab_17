@@ -9,5 +9,8 @@ class Loan_calculator(unittest.TestCase):
     def test_check_month(self):
         self.assertEquals(loancalculator(100000, 0.5, 10), 'Invalid month')
 
+    def test_negative_amount(self):
+        self.assertEquals(loancalculator(-100000, 12, 10), 'Invalid amount')
+
 if __name__ == '__main__':
     unittest.main()
