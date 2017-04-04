@@ -1,4 +1,10 @@
 def data_type(value):
+    """
+
+    function that takes one argument, compares and returns results
+    based on the argument supplied to the function
+    
+    """
     if type(value) == type(None):
         return 'no value'
     elif type(value) == list:
