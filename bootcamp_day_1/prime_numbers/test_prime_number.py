@@ -21,5 +21,8 @@ class Generate_prime_numbers(unittest.TestCase):
         except AssertionError:
             raise(AssertionError("Wrong type"))
 
+    def test_if_four_not_prime(self):
+        self.assertNotIn(4, gen_prime_number(10))
+
 if __name__ == '__main__':
     unittest.main()
