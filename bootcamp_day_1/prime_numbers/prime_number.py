@@ -8,6 +8,8 @@ def gen_prime_number(value):
                     isPrime = False
             if isPrime:
                 prime_numbers_list.append(element)
+    else:
+        return 'Invalid input'
     return prime_numbers_list
 
 
