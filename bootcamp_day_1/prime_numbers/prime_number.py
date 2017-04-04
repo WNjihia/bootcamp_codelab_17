@@ -16,4 +16,4 @@ def gen_prime_number(value):
     return prime_numbers_list
 
 
-print(gen_prime_number(2))
+print(gen_prime_number(10))

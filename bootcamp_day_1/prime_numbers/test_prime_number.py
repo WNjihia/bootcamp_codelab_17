@@ -15,5 +15,11 @@ class Generate_prime_numbers(unittest.TestCase):
     def test_returns_error_msg_if_value_not_variable_type(self):
         self.assertRaises(ValueError, gen_prime_number, 'ten')
 
+    def test_if_list(self):
+        try:
+            assert type(gen_prime_number(10)) is list
+        except AssertionError:
+            raise(AssertionError("Wrong type"))
+
 if __name__ == '__main__':
     unittest.main()
