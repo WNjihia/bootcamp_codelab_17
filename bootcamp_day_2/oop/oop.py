@@ -28,7 +28,7 @@ class Property_owner(Person):
 
     def add_property(self, property_id, description, street_address, rent_amount):
         self.properties[property_id] = Property(property_id, description, street_address, rent_amount, self)
-        self.properties[property_id]
+        return self.properties[property_id]
 
     def remove_tenant(self, ten):
         if ten in self.tenants:
@@ -36,7 +36,7 @@ class Property_owner(Person):
 
     def print_tenant(self):
         for ten in self.tenants:
-            print('-->', ten.full_name())
+            print('Tenant:', ten.full_name())
 
 
 class Property:
@@ -53,5 +53,8 @@ tenant1 = Tenant('Sue', 'Jackson', 10000)
 tenant2 = Tenant('Michael', 'Faraday', 5000)
 landlord_1 = Property_owner('Ian', 'Smith', [tenant1])
 property1 = landlord_1.add_property(1, '3 bedroomed house', '123 Kimathi', 30000)
-print(landlord_1.full_name())
+print('Property Owner:', landlord_1.full_name())
 landlord_1.print_tenant()
+print('-->', property1.description)
+print('-->', property1.street_address)
+print('-->', property1.rent_amount)
