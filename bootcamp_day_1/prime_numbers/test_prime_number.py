@@ -12,6 +12,8 @@ class Generate_prime_numbers(unittest.TestCase):
     def test_returns_error_msg_if_value_is_zero(self):
         self.assertEquals(gen_prime_number(0), 'Invalid input')
 
+    def test_returns_error_msg_if_value_not_variable_type(self):
+        self.assertRaises(ValueError, gen_prime_number, 'ten')
 
 if __name__ == '__main__':
     unittest.main()
