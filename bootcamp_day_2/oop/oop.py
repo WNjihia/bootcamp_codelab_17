@@ -1,4 +1,12 @@
 class Person:
+    """
+
+    This is an implementation of a simple property maangement application
+    A property owner has property and can add property.
+    A property owner also has tenants
+
+    """
+
     def __init__(self, fname, lname):
         self.fname = fname
         self.lname = lname
