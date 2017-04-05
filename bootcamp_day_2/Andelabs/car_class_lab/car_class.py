@@ -1,4 +1,10 @@
 class Car(object):
+    """
+    
+    Car class is defined and used to instantiate various vehicles
+
+    """
+
     def __init__(self, name='General', model='GM', car_type=None, speed=0):
         self.name = name
         self.model = model

@@ -1,4 +1,15 @@
 def loancalculator(amount, time, rate):
+    """
+    Function used to calculate the total loan amount repayable_amount
+
+    Args:
+    Amount is the principal amount borrowed
+    Time is the total duration for the loan repayment
+    Rate is the rate of interest
+
+    Returns the total repayable amount
+    """
+    
     variable_types = (int, float, complex)
     if isinstance(amount, variable_types) and isinstance(time, variable_types) and isinstance(rate, variable_types):
         if amount > 0:
