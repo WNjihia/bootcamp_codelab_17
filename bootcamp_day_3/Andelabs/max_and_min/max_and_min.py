@@ -1,4 +1,9 @@
 def find_max_min(list_value):
+    """
+    
+    Function that returns the maximum and minimum values in a list_value
+
+    """
     if len(set(list_value)) > 1:
         return [min(list_value), max(list_value)]
     else:
