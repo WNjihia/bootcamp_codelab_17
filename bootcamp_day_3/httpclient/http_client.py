@@ -11,6 +11,11 @@ def run():
        travel_guide()
 
 def weather(country, city):
+    """
+
+    Function that returns the temperature, humidity and local time
+
+    """
     weather_api_key = weather_API_KEY
     if (country == '1') and (city == '1'):
         weather_data = requests.get("http://api.wunderground.com/api/2ddcf526ba46b259/conditions/q/Kenya/Nairobi.json")
@@ -40,6 +45,11 @@ def weather(country, city):
         print('Invalid input')
 
 def geometry(input_value):
+    """
+
+    Function that gets the latitude and longitude
+    
+    """
     google_api_key = google_API_KEY
     gm = googlemaps.Client(key=google_API_KEY)
     geocode_result = gm.geocode(input_value)[0]
