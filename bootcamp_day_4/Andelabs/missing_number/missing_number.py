@@ -1,7 +1,7 @@
 def find_missing(list_one, list_two):
     """
 
-    Function that the difference between two lists
+    Function that returns the difference between two lists
 
     """
     if (len(list_one) == 0) and (len(list_two) == 0): # checks if the lists are empty
