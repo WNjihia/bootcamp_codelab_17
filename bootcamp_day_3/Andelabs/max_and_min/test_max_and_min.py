@@ -1,5 +1,5 @@
 import unittest
-from max_and_min import find_max_min
+from max_and_min import *
 
 
 class MaxMinTest(unittest.TestCase):
