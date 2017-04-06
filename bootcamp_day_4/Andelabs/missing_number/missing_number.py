@@ -1,7 +1,11 @@
 def find_missing(list_one, list_two):
     """
 
+<<<<<<< HEAD
     Function that returns the difference between two lists
+=======
+    Function that the difference between two lists
+>>>>>>> 22290a27e0b588143869d66e3d5c9ceaac3a38a5
 
     """
     if (len(list_one) == 0) and (len(list_two) == 0): # checks if the lists are empty
